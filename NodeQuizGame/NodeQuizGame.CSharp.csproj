@@ -78,9 +78,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\AnswerButton.cs" />
     <Compile Include="Assets\Scripts\AnswerData.cs" />
     <Compile Include="Assets\Scripts\BasicObjectPool.cs" />
     <Compile Include="Assets\Scripts\DataController.cs" />
+    <Compile Include="Assets\Scripts\GameController.cs" />
     <Compile Include="Assets\Scripts\MenuController.cs" />
     <Compile Include="Assets\Scripts\QuestionData.cs" />
     <Compile Include="Assets\Scripts\RoundData.cs" />
