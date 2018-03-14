@@ -28,6 +28,7 @@ public class GameController : MonoBehaviour {
 	void Start ()
     {
         dataController = FindObjectOfType<DataController>();
+
         roundData = dataController.GetCurrentRoundData();
         questionPool = roundData.questions;
         playerScore = 0;
@@ -38,6 +39,7 @@ public class GameController : MonoBehaviour {
         ShowQuestions();
         isRoundActive = true;
 	}
+
 
     private void ShowQuestions()
     {

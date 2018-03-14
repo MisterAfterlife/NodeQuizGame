@@ -2,13 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using SocketIO;
 
 public class DataController : MonoBehaviour {
 
     public RoundData[] allRoundData;
+    public SocketIOComponent socket;
 
-	void Start () {
+
+    void Start () {
         DontDestroyOnLoad(gameObject);
+
         SceneManager.LoadScene("MenuScreen");	
 	}
 	

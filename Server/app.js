@@ -20,7 +20,7 @@ io.sockets.on('connection', function(socket){
 	var thisId = shortid.generate();
 	
 	console.log('generating id: '+ thisId);
-	//socket.broadcast.emit('open');
+	socket.broadcast.emit('open');
 	
 	socket.on('request data', function(){
 		dbObj.collection('questionData').find({}).toArray(function(err, results){
