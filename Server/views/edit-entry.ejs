@@ -1,0 +1,27 @@
+<% include header %>
+
+<h2>Add new food</h2>
+
+<form method="post" role="form">
+	<% datas.forEach(function(roundData){  %>
+		<div class="form-group">
+			<label for="name">Name of Round</label>
+			<input type="text" class="form-control" id="name" name="name" placeholder="<%= roundData.name %>" required>
+		</div>
+		<div class="form-group">
+			<label for="name">Time Limit in Seconds</label>
+			<input type="text" class="form-control" id="timeLimitInSeconds" name="timeLimitInSeconds" placeholder="<%= roundData.timeLimitInSeconds %>" required>
+		</div>
+		<div class="form-group">
+			<label for="name">Points for Correct Answers</label>
+			<input type="text" class="form-control" id="pointsAddedForCorrectAnswer" name="pointsAddedForCorrectAnswer" placeholder="<%= roundData.pointsAddedForCorrectAnswer %>" required>
+		</div>
+
+	<% }) %>
+	
+	<div class="form-group">
+	<input type="submit" value="Edit round" class="btn btn-primary"> 
+	</div>	
+</form>
+
+<% include footer %>
